@@ -109,9 +109,9 @@ Each route has a number of parameters that can be used to define it:
 * __method__ - HTTP method (GET/POST/PUT/DELETE)
 * __library__ - the .js library that contains the callback to execute
 * __callback__ - the Javascript function to use as the callback
-* __parameters__ - Javascript object defining parameter
+* __parameters__ - Javascript object defining parameter (required)
 
-Each parameter has several options, only some may apply to certain data types:
+The parameters object is required, but may be empty ({}). Each parameter has several options, only some may apply to certain data types:
 
 * __required__ - is this required (bool)
 * __type__ - data type
