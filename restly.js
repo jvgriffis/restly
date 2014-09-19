@@ -16,6 +16,9 @@ var restly = {};
 var express = require('express');
 var app = express();
 
+// allow access to the underlying Express app:
+restly.app = app;
+
 // force express to parse posted and putted parameters
 app.use(express.bodyParser({ keepExtensions: true, uploadDir: '/tmp' }));
 
